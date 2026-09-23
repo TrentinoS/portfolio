@@ -63,51 +63,6 @@ function applyResumeView(mode) {
 }
 
 /* ============================================================
-   Download résumé as PDF (client-side, via html2pdf)
-   ============================================================ */
-const downloadBtn = document.getElementById("download-pdf");
-if (downloadBtn) {
-  downloadBtn.addEventListener("click", () => {
-    const src = document.getElementById("resume-doc");
-    if (!src || typeof html2pdf === "undefined") {
-      alert("PDF generator failed to load. Check your connection and try again.");
-      return;
-    }
-
-    // Make sure all bullets are visible in the PDF regardless of the active toggle
-    const prevActive = document.querySelector("#resume-toggle .vt.active");
-    applyResumeView("full");
-
-    const label = downloadBtn.innerHTML;
-    downloadBtn.disabled = true;
-    downloadBtn.textContent = "Generating…";
-
-    const opts = {
-      margin: [12, 12, 14, 12],
-      filename: "Milan-Singh-Resume.pdf",
-      image: { type: "jpeg", quality: 0.98 },
-      html2canvas: { scale: 2, useCORS: true, backgroundColor: "#ffffff" },
-      jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
-      pagebreak: { mode: ["css", "avoid-all"] },
-    };
-
-    html2pdf().set(opts).from(src).save()
-      .then(() => {
-        downloadBtn.disabled = false;
-        downloadBtn.innerHTML = label;
-        // restore the toggle the user had selected
-        if (prevActive && prevActive.dataset.view !== "full") applyResumeView(prevActive.dataset.view);
-      })
-      .catch((err) => {
-        console.error("PDF generation failed:", err);
-        downloadBtn.disabled = false;
-        downloadBtn.innerHTML = label;
-        alert("Sorry, PDF generation failed. Try again.");
-      });
-  });
-}
-
-/* ============================================================
    Writing feed
    ============================================================ */
 const posts = [
