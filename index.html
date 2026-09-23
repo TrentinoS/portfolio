@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Milan Singh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Mobile top bar -->
+  <header class="topbar">
+    <span class="topbar-name">Milan Singh</span>
+    <button class="menu-btn" id="menu-btn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div id="app">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <h1 class="brand-name">Milan Singh</h1>
+        <p class="brand-sub">AI Engineering Lead · Data Scientist</p>
+      </div>
+      <nav class="nav">
+        <a href="#home" class="nav-link" data-route="home"><span class="nav-ico">◇</span> Home</a>
+        <a href="#resume" class="nav-link" data-route="resume"><span class="nav-ico">▤</span> Resume</a>
+        <a href="#writing" class="nav-link" data-route="writing"><span class="nav-ico">✎</span> Writing</a>
+        <a href="https://github.com/TrentinoS" target="_blank" rel="noopener" class="nav-link"><span class="nav-ico">⌥</span> GitHub</a>
+        <a href="https://linkedin.com/in/singh-milan" target="_blank" rel="noopener" class="nav-link"><span class="nav-ico">in</span> LinkedIn</a>
+        <a href="mailto:milansinghthakur024@gmail.com" class="nav-link"><span class="nav-ico">✉</span> Email</a>
+      </nav>
+      <div class="sidebar-foot">v 0.01</div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <!-- HOME -->
+      <section class="view" id="view-home">
+        <div class="home-grid">
+          <div class="home-copy">
+            <p class="home-eyebrow">AI Engineering Leader · Data Science</p>
+            <h2 class="home-headline">I build autonomous AI systems<br />and lead the teams that ship them.</h2>
+
+            <p class="home-lede">Currently <strong>Senior AI Engineering Lead</strong> at Salty Accessories, architecting autonomous data platforms and production Generative AI — multi-agent frameworks (LangGraph, LangChain), computer vision, and forecasting. Five years turning manual, tool-heavy operations into AI-first systems that move ROI, engagement, and efficiency.</p>
+
+            <div class="home-cta">
+              <a href="#resume" class="btn btn-primary" data-route="resume">View résumé →</a>
+              <a href="#writing" class="btn" data-route="writing">Read writing</a>
+            </div>
+
+            <div class="mini-stats">
+              <div class="mini-stat"><span class="ms-num">5<span>yrs</span></span><span class="ms-label">AI &amp; data</span></div>
+              <div class="mini-stat"><span class="ms-num">35<span>+</span></span><span class="ms-label">pipelines shipped</span></div>
+              <div class="mini-stat"><span class="ms-num">98<span>%</span></span><span class="ms-label">CV accuracy</span></div>
+              <div class="mini-stat"><span class="ms-num">5<span>×</span></span><span class="ms-label">reply-rate lift</span></div>
+            </div>
+
+            <div class="rows">
+              <a href="#resume" class="row" data-route="resume">
+                <span class="row-title">Résumé</span>
+                <span class="row-desc">experience, selected work &amp; skills</span>
+                <span class="row-arrow">↗</span>
+              </a>
+              <a href="#writing" class="row" data-route="writing">
+                <span class="row-title">Writing</span>
+                <span class="row-desc">notes on AI, data &amp; systems</span>
+                <span class="row-arrow">↗</span>
+              </a>
+              <a href="https://github.com/TrentinoS" target="_blank" rel="noopener" class="row">
+                <span class="row-title">GitHub</span>
+                <span class="row-desc">projects &amp; experiments</span>
+                <span class="row-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- RESUME -->
+      <section class="view" id="view-resume" hidden>
+        <div class="resume-top">
+          <a href="#home" class="back" data-route="home">← Home</a>
+          <button type="button" id="download-pdf" class="pdf-link">↓ Download PDF <span class="pdf-updated">Updated Sep 2026</span></button>
+        </div>
+
+        <div id="resume-doc">
+        <!-- Hero -->
+        <header class="rhero">
+          <h2 class="rhero-name">Milan Singh</h2>
+          <p class="rhero-title">AI Engineering Leader · Data Science</p>
+          <p class="rhero-summary">I build autonomous data platforms and production Generative AI — multi-agent systems, computer vision, and forecasting — and I lead the teams that ship them. Five years turning manual, tool-heavy operations into AI-first systems that move ROI, engagement, and efficiency. Now building toward engineering leadership: owning architecture, strategy, and the org that executes it.</p>
+
+          <div class="stats">
+            <div class="stat"><span class="stat-num">5<span class="stat-unit">yrs</span></span><span class="stat-label">building AI &amp; data systems</span></div>
+            <div class="stat"><span class="stat-num">35<span class="stat-unit">+</span></span><span class="stat-label">production pipelines shipped</span></div>
+            <div class="stat"><span class="stat-num">98<span class="stat-unit">%</span></span><span class="stat-label">CV cataloging accuracy</span></div>
+            <div class="stat"><span class="stat-num">5<span class="stat-unit">×</span></span><span class="stat-label">reply-rate uplift (2%→10%)</span></div>
+          </div>
+        </header>
+
+        <!-- Selected work -->
+        <div class="section">
+          <h3 class="section-label">Selected Work</h3>
+          <div class="work-grid">
+            <article class="work">
+              <span class="work-tag">Agentic AI</span>
+              <h4 class="work-title">Agentic Commerce Protocol</h4>
+              <p class="work-desc">LangChain-powered autonomous agents that let customers browse and buy through LLM-driven interfaces across web and mobile — commerce as a conversation, not a catalog.</p>
+              <p class="work-stack">LangChain · LangGraph · FastAPI · AWS</p>
+            </article>
+            <article class="work">
+              <span class="work-tag">Computer Vision</span>
+              <h4 class="work-title">Multimodal Cataloging Engine</h4>
+              <p class="work-desc">CV system that extracts product attributes at <strong>98% accuracy</strong>, cutting cataloging from 20 minutes to under 1 minute per SKU across 35+ ingestion pipelines.</p>
+              <p class="work-stack">CLIP · OCR · Airflow · Data Lake</p>
+            </article>
+            <article class="work">
+              <span class="work-tag">Forecasting</span>
+              <h4 class="work-title">Demand &amp; Inventory Intelligence</h4>
+              <p class="work-desc">XGBoost + LSTM forecasting at <strong>~90% accuracy</strong> with a proactive stockout engine that recommends order quantities and protects cash flow.</p>
+              <p class="work-stack">XGBoost · LSTM · Python · SQL</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="section-head-row">
+          <h3 class="section-label">Experience</h3>
+          <div class="view-toggle" id="resume-toggle">
+          <button class="vt active" data-view="full">Full</button>
+          <button class="vt" data-view="technical">Technical</button>
+          <button class="vt" data-view="leadership">Leadership</button>
+          </div>
+        </div>
+
+        <div class="section" id="experience">
+
+          <article class="company">
+            <div class="company-head">
+              <img class="logo" src="logos/salty.jpg" alt="Salty logo" />
+              <span class="company-name">Salty Accessories</span>
+              <span class="company-years">present</span>
+            </div>
+
+            <div class="role">
+              <div class="role-head">
+                <h4 class="role-title">Senior AI Engineering Lead <span class="role-sub">— AI &amp; Data Platform</span></h4>
+                <span class="role-meta">Dec 2025 – Present · Delhi, India</span>
+              </div>
+              <p class="callout">Directing a cross-functional team of 4, driving the shift to an AI-first company culture.</p>
+              <ul>
+                <li data-view="technical">Architected a unified, autonomous data infrastructure on AWS (EC2, Data Lake), migrating off expensive third-party ETL onto a custom Airflow-orchestrated ecosystem; deployed 35+ high-frequency pipelines (Shopify, Amazon, Myntra) within the first 60 days.</li>
+                <li data-view="technical">Developed a Multimodal AI Image Recognition system for automated cataloging, using Computer Vision to extract product attributes with 98% accuracy, cutting manual processing from 20 minutes to under 1 minute per SKU.</li>
+                <li data-view="technical">Developed an "Agentic Commerce Protocol" using LangChain-powered autonomous agents so customers can browse and purchase via LLM-driven interfaces on web and mobile.</li>
+                <li data-view="technical">Engineered "Heartbeat," a gamified community engine leveraging social competition mechanics to uplift app downloads and viral engagement during peak sales periods.</li>
+                <li data-view="technical">Streamlined operations by automating manual tasks, including a regulatory-compliant barcode generation system and an intelligent label generator for Blinkit, Myntra, and Shopify.</li>
+                <li data-view="leadership">Directing a cross-functional team of 4 software and data analysts while spearheading the strategic shift toward a data-driven, AI-first culture.</li>
+                <li data-view="leadership">Built a unified financial intelligence suite giving founders and finance teams a holistic view of P&amp;L, automated expense/income tracking, and multi-channel ROI to optimize spend and phase out underperforming platforms.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="company">
+            <div class="company-head">
+              <img class="logo" src="logos/inhousen.jpg" alt="InHousen logo" />
+              <span class="company-name">InHousen</span>
+              <span class="company-years">1 yr</span>
+            </div>
+            <div class="role">
+              <div class="role-head">
+                <h4 class="role-title">Data Scientist &amp; AI Engineer</h4>
+                <span class="role-meta">Jan 2025 – Dec 2025 · Netherlands (Remote)</span>
+              </div>
+              <ul>
+                <li data-view="technical">Engineered an end-to-end sales forecasting pipeline using XGBoost and LSTM, reaching ~90% accuracy via custom feature engineering that captured complex seasonality and promotional impacts.</li>
+                <li data-view="technical">Developed a proactive inventory management system that forecasted stockouts and recommended order quantities, reducing lost revenue and optimizing cash flow by preventing overstocking.</li>
+                <li data-view="technical">Architected an AI agentic framework using LangChain and LangGraph for hyper-personalized outreach, boosting reply rates from 2% to 10% and shortening the sales cycle.</li>
+                <li data-view="technical">Implemented a RAG-based AI chatbot giving stakeholders on-demand, natural-language access to business intelligence, reducing reliance on the data team for ad-hoc reports.</li>
+                <li data-view="technical">Designed an AI-driven lead scoring model analyzing LinkedIn data to rank candidates by probability of engagement, improving recruitment outreach relevance.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="company">
+            <div class="company-head">
+              <img class="logo" src="logos/pintel.jpg" alt="Pintel.ai logo" />
+              <span class="company-name">Pintel.ai</span>
+              <span class="company-years">6 mos</span>
+            </div>
+            <div class="role">
+              <div class="role-head">
+                <h4 class="role-title">Data Science Engineer</h4>
+                <span class="role-meta">Jul 2024 – Dec 2024 · Bengaluru, India</span>
+              </div>
+              <ul>
+                <li data-view="technical">Led development of AI-powered personalized message sequences, boosting open rates by ~30% by using NLP to extract and incorporate social-media insights into outreach copy.</li>
+                <li data-view="technical">Built and deployed end-to-end AI solutions for B2B clients, automating aggregation of firmographic and technographic data to identify high-intent target accounts.</li>
+                <li data-view="technical">Created AI-driven tools for lead filtering, qualification, and scoring, improving lead management efficiency and helping clients target high-value prospects.</li>
+                <li data-view="leadership">Managed full-cycle execution of personalized campaigns for over 6,000 leads, ensuring seamless data flow from filtering and scoring through to automated delivery.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="company">
+            <div class="company-head">
+              <img class="logo" src="logos/skidos.jpg" alt="SKIDOS logo" />
+              <span class="company-name">Skidos Learning Labs</span>
+              <span class="company-years">3 yrs</span>
+            </div>
+            <div class="role">
+              <div class="role-head">
+                <h4 class="role-title">Senior Data Analyst</h4>
+                <span class="role-meta">Aug 2021 – Jul 2024 · Delhi, India</span>
+              </div>
+              <ul>
+                <li data-view="technical">Orchestrated a rigorous A/B testing framework, driving a ~15% UX improvement by validating changes to the onboarding flow and subscription funnels.</li>
+                <li data-view="technical">Analyzed pre- and post-SDK releases by monitoring performance and stability metrics, driving a ~15% improvement in key business outcomes and enabling 10+ feature launches.</li>
+                <li data-view="technical">Segmented high-value users using RFM analysis and clustering models, informing targeted features that boosted engagement and retention by ~15%.</li>
+                <li data-view="technical">Built and maintained ETL pipelines for 10+ projects, ensuring high reliability and uptime for business-critical data.</li>
+                <li data-view="leadership">Rolled out a weekly Learning Report that increased user engagement by ~25% and comprehension of weekly progress by 30%.</li>
+                <li data-view="leadership">Delivered 10+ in-depth analyses uncovering insights that improved product quality, user experience, and overall business growth.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="section">
+          <h3 class="section-label">Education</h3>
+          <article class="edu">
+            <div class="edu-head">
+              <span class="edu-school">Guru Ghasidas University</span>
+              <span class="role-meta">Aug 2017 – Jun 2021 · CG, India</span>
+            </div>
+            <p class="edu-degree">B.Tech, Chemical Engineering</p>
+          </article>
+        </div>
+
+        <div class="section">
+          <h3 class="section-label">Skills</h3>
+          <div class="skill-groups">
+            <div class="skill-group">
+              <p class="skill-cat">Artificial Intelligence</p>
+              <div class="chips">
+                <span class="chip">Generative AI</span><span class="chip">LangChain</span><span class="chip">LangGraph</span><span class="chip">RAG</span><span class="chip">Computer Vision</span><span class="chip">OCR / CLIP</span><span class="chip">XGBoost</span><span class="chip">LSTM</span><span class="chip">NLP</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <p class="skill-cat">Data Engineering</p>
+              <div class="chips">
+                <span class="chip">Apache Airflow</span><span class="chip">AWS Data Lake</span><span class="chip">ETL / ELT</span><span class="chip">SQL</span><span class="chip">dbt</span><span class="chip">Data Modeling</span><span class="chip">Pandas</span><span class="chip">NumPy</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <p class="skill-cat">Cloud &amp; Architecture</p>
+              <div class="chips">
+                <span class="chip">AWS (EC2, S3, Athena, Lambda)</span><span class="chip">GCP</span><span class="chip">MongoDB</span><span class="chip">FastAPI</span><span class="chip">Node.js</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <p class="skill-cat">Strategy &amp; Growth</p>
+              <div class="chips">
+                <span class="chip">A/B Testing</span><span class="chip">RFM Analysis</span><span class="chip">ROI Optimization</span><span class="chip">Power BI</span><span class="chip">Tableau</span><span class="chip">WebEngage</span><span class="chip">Jira</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <p class="skill-cat">Languages</p>
+              <div class="chips">
+                <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">JavaScript</span><span class="chip">HTML/CSS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div><!-- /#resume-doc -->
+      </section>
+
+      <!-- WRITING -->
+      <section class="view" id="view-writing" hidden>
+        <a href="#home" class="back" data-route="home">← Home</a>
+        <div class="filters" id="filters"></div>
+        <p class="writing-intro">Thoughts on various things. Views are my own.</p>
+        <div class="feed" id="feed"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
